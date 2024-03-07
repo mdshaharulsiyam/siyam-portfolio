@@ -3,7 +3,7 @@
 import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
 
-const ThemeProvider = ({ children }) => {
+const ThemeProviders = ({ children }) => {
   return (
     <ThemeProvider enableSystem>
       <NextTopLoader />
@@ -12,4 +12,4 @@ const ThemeProvider = ({ children }) => {
   );
 };
 
-export default ThemeProvider;
+export default ThemeProviders;
