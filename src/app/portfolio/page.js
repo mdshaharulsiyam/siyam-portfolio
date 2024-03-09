@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
@@ -31,7 +32,7 @@ const page = () => {
           <div className="portfolio-item padd-15" data-category="web-design">
             <div className="portfolio-item-inner shadow-dark">
               <div className="portfolio-img">
-                <img src="/imgs/portfolio/1.jpg" alt="portfolio" />
+                <Image height={400} width={400} src="/imgs/portfolio/1.jpg" alt="portfolio" />
               </div>
               <div className="portfolio-info">
                 <h4>Web Design</h4>
@@ -46,7 +47,7 @@ const page = () => {
           <div className="portfolio-item padd-15" data-category="web-design">
             <div className="portfolio-item-inner shadow-dark">
               <div className="portfolio-img">
-                <img src="/imgs/portfolio/2.jpg" alt="portfolio" />
+                <Image height={400} width={400} src="/imgs/portfolio/2.jpg" alt="portfolio" />
               </div>
               <div className="portfolio-info">
                 <h4>Web Design</h4>
@@ -61,7 +62,7 @@ const page = () => {
           <div className="portfolio-item padd-15" data-category="web-design">
             <div className="portfolio-item-inner shadow-dark">
               <div className="portfolio-img">
-                <img src="/imgs/portfolio/3.jpg" alt="portfolio" />
+                <Image height={400} width={400} src="/imgs/portfolio/3.jpg" alt="portfolio" />
               </div>
               <div className="portfolio-info">
                 <h4>Web Design</h4>
@@ -79,7 +80,7 @@ const page = () => {
           >
             <div className="portfolio-item-inner shadow-dark">
               <div className="portfolio-img">
-                <img src="/imgs/portfolio/4.jpg" alt="portfolio" />
+                <Image height={400} width={400} src="/imgs/portfolio/4.jpg" alt="portfolio" />
               </div>
               <div className="portfolio-info">
                 <h4>Banner Design</h4>
@@ -94,7 +95,7 @@ const page = () => {
           <div className="portfolio-item padd-15" data-category="wordpress">
             <div className="portfolio-item-inner shadow-dark">
               <div className="portfolio-img">
-                <img src="/imgs/portfolio/5.jpg" alt="portfolio" />
+                <Image height={400} width={400} src="/imgs/portfolio/5.jpg" alt="portfolio" />
               </div>
               <div className="portfolio-info">
                 <h4>Wordpress</h4>
@@ -109,7 +110,7 @@ const page = () => {
           <div className="portfolio-item padd-15" data-category="web-design">
             <div className="portfolio-item-inner shadow-dark">
               <div className="portfolio-img">
-                <img src="/imgs/portfolio/6.jpg" alt="portfolio" />
+                <Image height={400} width={400} src="/imgs/portfolio/6.jpg" alt="portfolio" />
               </div>
               <div className="portfolio-info">
                 <h4>Web Design</h4>

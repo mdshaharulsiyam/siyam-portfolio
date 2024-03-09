@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
@@ -15,7 +16,7 @@ const page = () => {
                         <div className="blog-item padd-15">
                             <div className="blog-item-inner shadow-dark">
                                 <div className="blog-img">
-                                    <img src="/imgs/blog/1.jpg" alt="Responsive Web Design" />
+                                    <Image height={400} width={400} src="/imgs/blog/1.jpg" alt="Responsive Web Design" />
                                     <div className="blog-date">June 4, 2020</div>
                                 </div>
                                 <div className="blog-info">
@@ -39,7 +40,7 @@ const page = () => {
                         <div className="blog-item padd-15">
                             <div className="blog-item-inner shadow-dark">
                                 <div className="blog-img">
-                                    <img src="/imgs/blog/2.jpg" alt="Creative Slideshow" />
+                                    <Image height={400} width={400} src="/imgs/blog/2.jpg" alt="Creative Slideshow" />
                                     <div className="blog-date">June 4, 2020</div>
                                 </div>
                                 <div className="blog-info">
@@ -63,7 +64,7 @@ const page = () => {
                         <div className="blog-item padd-15">
                             <div className="blog-item-inner shadow-dark">
                                 <div className="blog-img">
-                                    <img src="/imgs/blog/3.jpg" alt="Image Gallery Lightbox" />
+                                    <Image height={400} width={400} src="/imgs/blog/3.jpg" alt="Image Gallery Lightbox" />
                                     <div className="blog-date">June 4, 2020</div>
                                 </div>
                                 <div className="blog-info">
