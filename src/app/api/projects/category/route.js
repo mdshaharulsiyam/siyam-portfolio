@@ -1,6 +1,7 @@
 import projectModel from '@/models/project/index'
 import ConnectionDB from '@/utils/DB_connection/index'
-export async function GET(request) {
+import { NextResponse } from 'next/server';
+export async function GET() {
     try {
         ConnectionDB()
         const result = await projectModel.aggregate([
@@ -18,8 +19,8 @@ export async function GET(request) {
               }
             }
           ]);
-        return Response.json({ success: true, data: result });
+        return NextResponse.json({ success: true, data: result });
     } catch (error) {
-        return Response.json({ success: false, msg: 'unable to get project' });
+        return NextResponse.json({ success: false, msg: 'unable to get category' });
     }
 }
