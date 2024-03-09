@@ -15,8 +15,8 @@ export const Category = async () => {
                 </button>
             </Link>
             {
-                Data?.success && Data?.data.map(item => <Link href={`/portfolio?category=${item?.technology}`}>
-                <button key={item?.technology} type="button" data-filter="graphics-design">
+                Data?.success && Data?.data.map(item => <Link key={item?.technology} href={`/portfolio?category=${item?.technology}`}>
+                <button type="button" data-filter="graphics-design">
                     {item?.technology}({item?.count})
                 </button>
                 </Link>)
