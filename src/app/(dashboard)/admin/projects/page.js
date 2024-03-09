@@ -1,9 +1,11 @@
+import ProjectForm from '@/Components/Projects/ProjectForm/ProjectForm'
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
+    return (<>
+        <ProjectForm />
+    </>)
 }
 
 export default page

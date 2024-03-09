@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 import { auth } from '@/auth/auth'
-
 export async function middleware(request) {
     const session = await auth()
     console.log(session)
