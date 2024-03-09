@@ -1,21 +1,26 @@
+import Link from 'next/link'
 import React from 'react'
 
 export const Category = async () => {
-    const response = await fetch('https://siyam-portfolio.vercel.app/api/projects/category', {
+    const response = await fetch('http://localhost:3000/api/projects/category', {
         cache: 'no-store'
     })
     const Data = await response.json()
     // console.log(Data)
     return (
-                <div className="portfolio-filter padd-15">
-                    <button type="button" className="active" data-filter="all">
-                        All
-                    </button>
-                    {
-                        Data?.data.map(item => <button key={item?.technology} type="button" data-filter="graphics-design">
-                            {item?.technology}({item?.count})
-                        </button>)
-                    }
-                </div>
+        <div className="portfolio-filter padd-15">
+            <Link href={`/portfolio?category=all`}>
+                <button type="button" className="active" data-filter="all">
+                    All
+                </button>
+            </Link>
+            {
+                Data?.success && Data?.data.map(item => <Link href={`/portfolio?category=${item?.technology}`}>
+                <button key={item?.technology} type="button" data-filter="graphics-design">
+                    {item?.technology}({item?.count})
+                </button>
+                </Link>)
+            }
+        </div>
     )
 }

@@ -8,7 +8,7 @@ const ApplyMiddleWare = (app)=>{
         origin: [
             LOCAL_CLIENT,
             CLIENT,
-            'https://siyam-portfolio.vercel.app'
+            'http://localhost:3000'
         ],
         credentials : true,
         optionsSuccessStatus: 200,
