@@ -3,7 +3,6 @@ import { Projects } from '@/Components/Portfolio/Projects/Projects'
 import React, { Suspense } from 'react'
 
 const page = async ({searchParams}) => {
-
   return (
     <div>
       <section className="portfolio section" id="portfolio">

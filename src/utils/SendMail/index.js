@@ -3,8 +3,8 @@ const { USER_EMAIL, USER_PASS } = require('../../config')
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: USER_EMAIL,
-        pass: USER_PASS,
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
     },
 })
 const mailSend = async (mailData) => {

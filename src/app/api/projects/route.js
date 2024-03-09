@@ -18,7 +18,7 @@ export async function GET(request) {
         const technology = request.nextUrl.searchParams.get('category');
         // console.log(technology)
         let filter = {}
-        if (technology!=='undefined' && technology !== 'all') {
+        if (technology !== 'all') {
             filter.technology = technology
         }
         const result = await projectModel.find(filter);

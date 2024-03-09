@@ -1,20 +1,6 @@
 import mongoose from 'mongoose'
-import { ENV, LOCAL_DB, DB_USER, DB_PASS, PROD_DB, DB_NAME } from '@/config/index';
-
-const GetConnectionURL = () => {
-    let ConUrl;
-    if (ENV === 'development') {
-        ConUrl = LOCAL_DB;
-        ConUrl = ConUrl.replace("<username>", DB_USER);
-        ConUrl = ConUrl.replace("<password>", DB_PASS);
-    } else {
-        ConUrl = PROD_DB;
-    }
-    return ConUrl
-}
 const ConnectionDB = async () => {
-    const url = GetConnectionURL()
-    await mongoose.connect(url, { dbName: DB_NAME })
-    //console.log("connected to database");
+    await mongoose.connect(`mongodb+srv://${process.env.DATABASE_LOCAL_USERNAME}:${process.env.DATABASE_LOCAL_PASSWORD}@cluster0.cx0yex7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    `, { dbName: process.env.DB_NAME })
 }
 module.exports = ConnectionDB
