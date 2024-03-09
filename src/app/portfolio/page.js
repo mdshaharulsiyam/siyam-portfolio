@@ -1,130 +1,64 @@
+import { Category } from '@/Components/Portfolio/Category/Category'
+import { auth } from '@/auth/auth'
 import Image from 'next/image'
-import React from 'react'
+import React, { Suspense } from 'react'
 
-const page = () => {
+const page = async () => {
+  const sesion = await auth()
+  const response = await fetch('https://siyam-portfolio.vercel.app/api/projects', {
+    cache: 'no-store'
+  })
+  const Data = await response.json()
+  // console.log(Data)
   return (
     <div>
-    <section className="portfolio section" id="portfolio">
-      <div className="container">
-        <div className="row">
-          <div className="section-title padd-15">
-            <h2>Portfolio</h2>
+      <section className="portfolio section" id="portfolio">
+        <div className="container">
+          <div className="row">
+            <div className="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div className="row">
+            <Suspense fallback={'loading...'}>
+              <Category />
+            </Suspense>
+
+          </div>
+          <div className="row">
+            {/* Portfolio Item */}
+            {
+              Data?.data.map(item => <div key={item?._id} className="portfolio-item padd-15" data-category="web-design">
+                <div className="portfolio-item-inner shadow-dark">
+                  <div className="portfolio-img">
+                    <Image height={400} width={400} src={item?.image} alt="portfolio" />
+                  </div>
+                  <div className="portfolio-info">
+                    <h4>{item?.title}</h4>
+                    <p>{item?.description}</p>
+                    <div className='icon_parent'>
+                      {
+                        sesion?.user && <div className="icon">
+                          <i class="fa fa-trash"></i>
+                        </div>  
+                      }
+
+                      <div className="icon">
+                        <i class="fa fa-globe"></i>
+                      </div>
+                      <div className="icon">
+                        <i class="fa fa-github"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              )
+            }
           </div>
         </div>
-        <div className="row">
-          <div className="portfolio-filter padd-15">
-            <button type="button" className="active" data-filter="all">
-              All
-            </button>
-            <button type="button" data-filter="graphics-design">
-              Graphics Design
-            </button>
-            <button type="button" data-filter="web-design">
-              Web Design
-            </button>
-            <button type="button" data-filter="wordpress">
-              Wordpress
-            </button>
-          </div>
-        </div>
-        <div className="row">
-          {/* Portfolio Item */}
-          <div className="portfolio-item padd-15" data-category="web-design">
-            <div className="portfolio-item-inner shadow-dark">
-              <div className="portfolio-img">
-                <Image height={400} width={400} src="/imgs/portfolio/1.jpg" alt="portfolio" />
-              </div>
-              <div className="portfolio-info">
-                <h4>Web Design</h4>
-                <div className="icon">
-                  <i className="fa fa-search" />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Portfolio Item End*/}
-          {/* Portfolio Item */}
-          <div className="portfolio-item padd-15" data-category="web-design">
-            <div className="portfolio-item-inner shadow-dark">
-              <div className="portfolio-img">
-                <Image height={400} width={400} src="/imgs/portfolio/2.jpg" alt="portfolio" />
-              </div>
-              <div className="portfolio-info">
-                <h4>Web Design</h4>
-                <div className="icon">
-                  <i className="fa fa-search" />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Portfolio Item End*/}
-          {/* Portfolio Item */}
-          <div className="portfolio-item padd-15" data-category="web-design">
-            <div className="portfolio-item-inner shadow-dark">
-              <div className="portfolio-img">
-                <Image height={400} width={400} src="/imgs/portfolio/3.jpg" alt="portfolio" />
-              </div>
-              <div className="portfolio-info">
-                <h4>Web Design</h4>
-                <div className="icon">
-                  <i className="fa fa-search" />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Portfolio Item End*/}
-          {/* Portfolio Item */}
-          <div
-            className="portfolio-item padd-15"
-            data-category="graphics-design"
-          >
-            <div className="portfolio-item-inner shadow-dark">
-              <div className="portfolio-img">
-                <Image height={400} width={400} src="/imgs/portfolio/4.jpg" alt="portfolio" />
-              </div>
-              <div className="portfolio-info">
-                <h4>Banner Design</h4>
-                <div className="icon">
-                  <i className="fa fa-search" />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Portfolio Item End*/}
-          {/* Portfolio Item */}
-          <div className="portfolio-item padd-15" data-category="wordpress">
-            <div className="portfolio-item-inner shadow-dark">
-              <div className="portfolio-img">
-                <Image height={400} width={400} src="/imgs/portfolio/5.jpg" alt="portfolio" />
-              </div>
-              <div className="portfolio-info">
-                <h4>Wordpress</h4>
-                <div className="icon">
-                  <i className="fa fa-search" />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Portfolio Item End*/}
-          {/* Portfolio Item */}
-          <div className="portfolio-item padd-15" data-category="web-design">
-            <div className="portfolio-item-inner shadow-dark">
-              <div className="portfolio-img">
-                <Image height={400} width={400} src="/imgs/portfolio/6.jpg" alt="portfolio" />
-              </div>
-              <div className="portfolio-info">
-                <h4>Web Design</h4>
-                <div className="icon">
-                  <i className="fa fa-search" />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Portfolio Item End*/}
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
   )
 }
 
