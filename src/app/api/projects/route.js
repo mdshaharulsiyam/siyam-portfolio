@@ -3,7 +3,7 @@ import ConnectionDB from '@/utils/DB_connection/index'
 import { NextRequest, NextResponse } from 'next/server';
 export async function POST() {
    try {
-    ConnectionDB()
+    await ConnectionDB()
     const data = await NextRequest.json()
     const result = await projectModel.create(data);
     return NextResponse.json({ success: true, data: result });
@@ -14,7 +14,7 @@ export async function POST() {
 
 export async function GET() {
     try {
-        ConnectionDB()
+       await ConnectionDB()
         const result = await projectModel.find();
         return NextResponse.json({ success: true, data: result });
     } catch (error) {
