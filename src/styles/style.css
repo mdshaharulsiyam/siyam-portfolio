@@ -514,6 +514,17 @@ select {
   top: -40px;
   font-weight: 400;
 }
+.about .about-content .skils_set .title{
+  margin-top: 10px;
+  margin-bottom: 6px;
+font-size: 26px;
+}
+.about .about-content .skils_set button{
+  padding: 3px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 6px;
+  }
 .about .about-content .education {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;

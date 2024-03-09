@@ -25,7 +25,7 @@ const ProjectForm = () => {
         const ProjectData = {
             title, live, github, image: data?.data?.display_url, description, technology
         }
-        const response = await fetch('http://localhost:3000/api/projects', {
+        const response = await fetch('https://siyam-portfolio.vercel.app/api/projects', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
