@@ -36,7 +36,7 @@ export const WonerInfoForm = () => {
             body: JSON.stringify(profileData),
         })
         const profilepost = await response.json()
-        console.log(profilepost)
+       // console.log(profilepost)
         if (profilepost?.success) {
             e.target.reset()
             router.refresh()

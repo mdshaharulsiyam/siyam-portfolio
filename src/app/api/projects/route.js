@@ -16,7 +16,7 @@ export async function GET(request) {
     try {
         await ConnectionDB()
         const technology = request.nextUrl.searchParams.get('category');
-        // console.log(technology)
+        //// console.log(technology)
         let filter = {}
         if (technology !== 'all') {
             filter.technology = technology
@@ -34,7 +34,7 @@ try {
     const result = await projectModel.deleteOne({_id :id})
     return NextResponse.json({ success: true, data: result });
 } catch (error) {
-    console.log(error)
+   // console.log(error)
     return NextResponse.json({ success: false, msg: 'unable to delete' });
 }
 }

@@ -9,7 +9,7 @@ export const Featured = async() => {
         cache: 'no-store'
       })
       const Data = await response.json()
-      // console.log(Data)
+      //// console.log(Data)
       return (
         <>
           {

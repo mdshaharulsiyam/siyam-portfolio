@@ -2,14 +2,13 @@ import { GoBackButton } from '@/Components/blog/Details/GoBackButton/GoBackButto
 import moment from 'moment'
 import Image from 'next/image'
 
-import React from 'react'
 const page = async ({ params }) => {
-    // console.log(params.id)
-    const response = await fetch(`http://localhost:3000/api/blog/single?id=${params.id}`, {
-        cache: 'no-store'
+   // console.log(params.id)
+    const response = await fetch(`http://localhost:3000/api/blog/${params.id}`,{
+        cache:'no-store'
     })
     const blogData = await response.json()
-    // console.log(blogData)
+    //// console.log(blogData)
     return (
         <>
             <section className="blog section" id="blog">

@@ -21,7 +21,7 @@ export async function GET(request) {
     ]);
     return NextResponse.json({ success: true, data: result });
   } catch (error) {
-    console.log(error)
+   // console.log(error)
     return NextResponse.json({ success: false, msg: 'unable to get category' });
   }
 }

@@ -28,7 +28,7 @@ export const BlogForm = () => {
             body: JSON.stringify(ProjectData),
         })
         const blogpost = await response.json()
-        // console.log(blogpost)
+        //// console.log(blogpost)
         if (blogpost?.success) {
             e.target.reset()
             router.refresh()

@@ -19,7 +19,7 @@ export async function POST(request) {
         await mailSend(mailData)
         return NextResponse.json({ success: true, msg: 'gmail sent' });
     } catch (error) {
-        console.log(error)
+       // console.log(error)
         return NextResponse.json({ success: false, msg: 'unable to send  mail' });
     }
 }

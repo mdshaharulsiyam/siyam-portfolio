@@ -11,7 +11,7 @@ export const BlogDelete = ({id}) => {
         if (data?.success) {
             router.refresh()
         }
-        console.log(data)
+       // console.log(data)
     }
     return <div onClick={() => DeleteProject(id)} className="icon">
         <i className="fa fa-trash"></i>

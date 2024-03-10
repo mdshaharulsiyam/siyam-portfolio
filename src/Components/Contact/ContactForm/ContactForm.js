@@ -14,7 +14,7 @@ export const ContactForm = () => {
         const data = {
             name ,email,subject,msg
         }
-        // console.log(data)
+        //// console.log(data)
         const response = await fetch('https://siyam-portfolio.vercel.app/api/contact', {
             method: "POST",
             headers: {
@@ -24,7 +24,7 @@ export const ContactForm = () => {
         })
         setloading(false)
         const projectpost = await response.json()
-        console.log(projectpost)
+       // console.log(projectpost)
         if (projectpost?.success) {
             notify()
             e.target.reset()

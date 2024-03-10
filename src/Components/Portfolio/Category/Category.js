@@ -9,7 +9,7 @@ export const Category = async ({searchParams}) => {
         cache: 'no-store'
     })
     const Data = await response.json()
-    // console.log(Data)
+    //// console.log(Data)
     return (
         <div className="portfolio-filter padd-15">
             <Link href={`/portfolio?category=all`}>
