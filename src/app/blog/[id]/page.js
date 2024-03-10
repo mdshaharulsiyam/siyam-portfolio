@@ -4,7 +4,8 @@ import Image from 'next/image'
 
 import React from 'react'
 const page = async ({ params }) => {
-    const response = await fetch(`https://siyam-portfolio.vercel.app/api/blog/single?id=${params.id}`, {
+    // console.log(params.id)
+    const response = await fetch(`http://localhost:3000/api/blog/single?id=${params.id}`, {
         cache: 'no-store'
     })
     const blogData = await response.json()
