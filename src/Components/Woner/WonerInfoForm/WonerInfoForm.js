@@ -28,7 +28,7 @@ export const WonerInfoForm = () => {
         const profileData = {
             title, about, email, image: data?.data?.display_url, phone, address, github, facebook, insta, linkdin, twiter
         }
-        const response = await fetch('http://localhost:3000/api/woner', {
+        const response = await fetch('https://siyam-portfolio.vercel.app/api/woner', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

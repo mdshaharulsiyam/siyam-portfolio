@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default async function Home() {
-  const response = await fetch('http://localhost:3000/api/woner', {
+  const response = await fetch('https://siyam-portfolio.vercel.app/api/woner', {
     cache: 'no-store'
   })
   const userData = await response.json()
