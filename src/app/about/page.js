@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -62,19 +63,19 @@ const page = () => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="/assets/docs/resume.pdf"
+                        href="shaharul_siyam_resume.pdf"
                         target="_target"
                         className="btn"
                       >
                         Download CV
                       </a>
-                      <a
-                        href="#contact"
+                      <Link
+                        href="/contact"
                         data-section-index={0}
                         className="btn hire-me"
                       >
                         Hire Me
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -140,15 +141,13 @@ const page = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
+                            <i className="fa fa-calendar" /> 2022 to Present
                           </h6>
                           <h4 className="timeline-title">
                             Self Taught (Programming)
                           </h4>
                           <p className="timeline-text">
-                            Since 2020 I started to learn Programming. I have
-                            learn Html, Css, Sass, JavaScript, Bootstrap. Now I
-                            am a Professional Web Designer..
+                            Since 2022, I embarked on my programming journey, mastering HTML, CSS,JavaScript, and delving into the world of web design. I expanded my skills further by learning web design and development with WordPress and basic PHP CRUD operations, as well as gaining a solid understanding of MySQL basics through European IT. Additionally, I enriched my expertise in MERN stack web development through the comprehensive courses offered by Programming Hero. Today, I proudly identify as a Professional Web Designer, equipped with a diverse skill set to create dynamic and engaging web experiences.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -156,15 +155,13 @@ const page = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2019 to Present
+                            <i className="fa fa-calendar" /> 2018 to 2022
                           </h6>
                           <h4 className="timeline-title">
-                            Diploma in Civil Engineering
+                            Diploma in Computer Engineering
                           </h4>
                           <p className="timeline-text">
-                            From 2019 I started my journey to be a Civil
-                            Engineer on Shyamoli Ideal Polytechnic Institute. It
-                            still Running to Present.
+                            In 2022 I completed  Diploma in Computer Engineering from pabna Polytechnic Institute  with GPA- 3.59 out of 4.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -172,15 +169,14 @@ const page = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2014 to 2019
+                            <i className="fa fa-calendar" /> 2013 to 2018
                           </h6>
                           <h4 className="timeline-title">
                             Secondary School Certificate
                           </h4>
                           <p className="timeline-text">
-                            In 2019 I passed SSC Exam from Science Group with
-                            GPA- 4.56. My school name was Patgram Anath Bondhu
-                            Govt. High School.
+                            In 2018 I passed SSC Exam from Science Group with
+                            GPA- 4.17. My school name was pirgachha High School.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -189,7 +185,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className="experience padd-15">
-                  <h3 className="title">Experience</h3>
+                  <h3 className="title">completed Course</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
@@ -197,13 +193,23 @@ const page = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2019 to Present
+                            <i className="fa fa-calendar" /> 2022 <span style={{
+                              fontWeight: 'bold'
+                            }}>(European It)</span>
                           </h6>
-                          <h4 className="timeline-title">Graphics Design</h4>
+                          <h4 className="timeline-title">web design and development with wordpress</h4>
                           <p className="timeline-text">
-                            From 2018 I am woking on Graphics Design. The
-                            software I use Photoshop, Illustrator for Graphics
-                            design.
+                            in 2022 I completed web design and development with wordpress course from european it, i learn custom website development with elementor ,infold and flatsome theme , and woocommerce plagin also i learn PHP curd oparetions , basics MYSQL,HTML,CSS,jquey plagins etc.
+                          </p>
+                          <p style={{
+                            marginTop: '5px'
+                          }} className="timeline-text">
+                            <a target='_blank' style={{
+                              fontWeight: 'bold',
+                              color: 'blue',
+                              textDecoration: 'underline',
+                              textTransform: 'uppercase'
+                            }} href='/certificate_wordpress.pdf'>certificate</a>
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -211,28 +217,46 @@ const page = () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
+                            <i className="fa fa-calendar" /> 2023 <span style={{
+                              fontWeight: 'bold'
+                            }}>(Programming Hero)</span>
                           </h6>
-                          <h4 className="timeline-title">Web Design</h4>
+                          <h4 className="timeline-title">complete web development </h4>
                           <p className="timeline-text">
-                            Since 2020 I started to learn Coding. I have learn
+                            in 2023 I completed web complete development course from programming hero, i React js , Next js , Node js , MongoDB , Mongooes , Express js , JavaScript es6 , GitHub , payment methode, HTML CSS,
+                          </p>
+                          <p style={{
+                            marginTop: '5px'
+                          }} className="timeline-text">
+                            <a target='_blank' style={{
+                              fontWeight: 'bold',
+                              color: 'blue',
+                              textDecoration: 'underline',
+                              textTransform: 'uppercase'
+                            }} href='/certificate_mern.pdf'>certificate</a>
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="title">Experience</h3>
+                  <div className="row">
+                    <div className="timeline-box padd-15">
+                      <div className="timeline shadow-dark">
+                        {/* Timeline Item */}
+                        {/* <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> 2023 to Present
+                          </h6>
+                          <h4 className="timeline-title">web development</h4>
+                          <p className="timeline-text">
+                            Since 2023 I started to learn Coding. I have learn
                             Html, Css, Sass, JavaScript, Bootstrap. Now I am a
                             Professional Web Designer..
                           </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2020 to Present
-                          </h6>
-                          <h4 className="timeline-title">Wordpress</h4>
-                          <p className="timeline-text">
-                            Since 2020 I started to learn Wordpress. I can
-                            install, Customize, &amp; fix bug on wordpress.{" "}
-                          </p>
-                        </div>
+                        </div> */}
                         {/* Timeline Item end */}
                       </div>
                     </div>

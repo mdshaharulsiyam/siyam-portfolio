@@ -1,5 +1,4 @@
-const nodemailer = require('nodemailer')
-const { USER_EMAIL, USER_PASS } = require('../../config')
+import nodemailer from 'nodemailer'
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
