@@ -5,7 +5,7 @@ export const Category = async ({searchParams}) => {
     if (!searchParams?.category) {
         searchParams.category ='all'
       }
-    const response = await fetch('https://siyam-portfolio.vercel.app/api/projects/category', {
+    const response = await fetch('https://siyam-portfolio.vercel.app/api/category', {
         cache: 'no-store'
     })
     const Data = await response.json()

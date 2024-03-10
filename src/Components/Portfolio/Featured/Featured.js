@@ -5,7 +5,7 @@ import { ProjectDeleteButton } from '../ProjectDeleteButton/ProjectDeleteButton'
 
 export const Featured = async() => {
       const sesion = await auth()
-      const response = await fetch(`https://siyam-portfolio.vercel.app/api/projects/featured`, {
+      const response = await fetch(`https://siyam-portfolio.vercel.app/api/featured`, {
         cache: 'no-store'
       })
       const Data = await response.json()
