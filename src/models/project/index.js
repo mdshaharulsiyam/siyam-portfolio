@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose";
 import mongoose from "mongoose"
+import { stringify } from "postcss";
 const projectSchema = new Schema({
     title: {
         type: String,
@@ -24,6 +25,10 @@ const projectSchema = new Schema({
     technology: {
         type: String,
         required: true,
+    },
+    featured: {
+        type: String,
+        required: true
     }
 }, { timestamps: true });
 

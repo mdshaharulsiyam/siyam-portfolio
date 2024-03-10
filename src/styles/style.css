@@ -123,6 +123,9 @@ select {
   left: 0;
   margin-top: 8px;
 }
+#portfolio #featured {
+  color: #000;
+}
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -1108,6 +1111,7 @@ font-size: 26px;
 [data-theme='dark'] .about .about-content .personal-info .info-item p,
 [data-theme='dark'] .about .about-content .about-text h2,
 [data-theme='dark'] .section-title h2,
+[data-theme='dark'] #portfolio #featured,
 [data-theme='dark'] .home .intro h1,
 [data-theme='dark'] .aside .copyright,
 [data-theme='dark'] .aside .logo a,

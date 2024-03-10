@@ -27,3 +27,14 @@ export async function GET(request) {
         return NextResponse.json({ success: false, msg: 'unable to get project' });
     }
 }
+export async function DELETE(request) {
+try {
+    await ConnectionDB()
+    const id = request.nextUrl.searchParams.get('id');
+    const result = await projectModel.deleteOne({_id :id})
+    return NextResponse.json({ success: true, data: result });
+} catch (error) {
+    console.log(error)
+    return NextResponse.json({ success: false, msg: 'unable to delete' });
+}
+}

@@ -20,10 +20,8 @@ const ProjectForm = () => {
             body: formData,
         });
         const data = await res.json()
-        console.log(data?.data?.display_url)
-        console.log(title, live, github, img)
         const ProjectData = {
-            title, live, github, image: data?.data?.display_url, description, technology
+            title, live, github, image: data?.data?.display_url, description, technology,featured:'none'
         }
         const response = await fetch('https://siyam-portfolio.vercel.app/api/projects', {
             method: "POST",
