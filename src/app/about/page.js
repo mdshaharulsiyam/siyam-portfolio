@@ -30,7 +30,7 @@ const page = () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>http://localhost:3000/</span>
+                        Website : <span>https://siyam-portfolio.vercel.app/</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">

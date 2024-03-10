@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export const Category = async () => {
-    const response = await fetch('http://localhost:3000/api/projects/category', {
+    const response = await fetch('https://siyam-portfolio.vercel.app/api/projects/category', {
         cache: 'no-store'
     })
     const Data = await response.json()
