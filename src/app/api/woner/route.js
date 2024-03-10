@@ -17,7 +17,7 @@ export async function POST(request) {
 export async function GET(request) {
     try {
         await ConnectionDB()
-        const result = await wonerModel.find().sort({ timestampField: -1 }).limit(1);
+        const result = await wonerModel.find().sort({ createdAt: -1 }).limit(1);
         return NextResponse.json({ success: true, data: result });
     } catch (error) {
         return NextResponse.json({ success: false, msg: 'unable to get profile' });
