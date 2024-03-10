@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const page = async ({ params }) => {
    // console.log(params.id)
-    const response = await fetch(`http://localhost:3000/api/blog/${params.id}`,{
+    const response = await fetch(`https://siyam-portfolio.vercel.app/api/blog/${params?.id}`,{
         cache:'no-store'
     })
     const blogData = await response.json()
@@ -21,7 +21,7 @@ const page = async ({ params }) => {
                     <div className="row">
                         {/* Blog blogData 1 */}
                         {
-                            <div key={blogData?.data?._id} className="blog-blogData padd-15">
+                            <div className="blog-blogData padd-15">
                                 <div className="blog-blogData-inner shadow-dark">
                                     <div className="blog-img">
                                         <Image height={500} width={1000} src={blogData?.data?.image} alt="Responsive Web Design" />
