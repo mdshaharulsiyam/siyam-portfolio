@@ -1,11 +1,10 @@
 'use client'
 
 import { useRouter } from "next/navigation"
-
-export const ProjectDeleteButton = ({ id }) => {
+export const BlogDelete = ({id}) => {
     const router = useRouter()
     const DeleteProject = async (id) => {
-        const response = await fetch(`https://siyam-portfolio.vercel.app/api/projects?id=${id}`, {
+        const response = await fetch(`https://siyam-portfolio.vercel.app/api/blog?id=${id}`, {
            method:'DELETE',
         })
         const data =await response.json()

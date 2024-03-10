@@ -1,6 +1,5 @@
 import { Schema, model } from "mongoose";
 import mongoose from "mongoose"
-import { stringify } from "postcss";
 const projectSchema = new Schema({
     title: {
         type: String,

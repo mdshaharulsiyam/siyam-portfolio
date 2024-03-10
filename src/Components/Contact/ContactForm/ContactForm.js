@@ -15,7 +15,7 @@ export const ContactForm = () => {
             name ,email,subject,msg
         }
         // console.log(data)
-        const response = await fetch('http://localhost:3000/api/contact', {
+        const response = await fetch('https://siyam-portfolio.vercel.app/api/contact', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

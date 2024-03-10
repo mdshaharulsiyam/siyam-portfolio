@@ -31,12 +31,12 @@ export const Projects = async ({ searchParams }) => {
 
                 <a target='_blank' href={item?.live}>
                   <div className="icon">
-                    <i class="fa fa-globe"></i>
+                    <i className="fa fa-globe"></i>
                   </div>
                 </a>
                 <a target='_blank' href={item?.github}>
                   <div className="icon">
-                    <i class="fa fa-github"></i>
+                    <i className="fa fa-github"></i>
                   </div>
                 </a>
               </div>
