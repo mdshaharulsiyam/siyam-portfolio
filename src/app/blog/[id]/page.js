@@ -4,10 +4,11 @@ import Image from 'next/image'
 
 import React from 'react'
 const page = async ({ params }) => {
-    const response = await fetch(`https://siyam-portfolio.vercel.app/api/blog/single?id=${params?.id}`, {
+    const response = await fetch(`https://siyam-portfolio.vercel.app/api/blog/single?id=${params.id}`, {
         cache: 'no-store'
     })
     const blogData = await response.json()
+    // console.log(blogData)
     return (
         <>
             <section className="blog section" id="blog">

@@ -1,7 +1,11 @@
 import { ContactForm } from '@/Components/Contact/ContactForm/ContactForm'
 import React from 'react'
 
-const page = () => {
+const page = async() => {
+  const response = await fetch('http://localhost:3000/api/woner', {
+    cache: 'no-store'
+  })
+  const userData = await response.json()
   return (
     <>
       <section className="contact section" id="contact">
@@ -18,7 +22,7 @@ const page = () => {
                 <i className="fa fa-map-marker" />
               </div>
               <h4>Address</h4>
-              <p>thonthonia, Bogra, Bangladesh</p>
+              <p>{userData?.data[0].address}</p>
             </div>
             {/* contact-info-item Ended */}
             {/* contact-info-item */}
@@ -27,7 +31,7 @@ const page = () => {
                 <i className="fa fa-phone" />
               </div>
               <h4>Call Us On</h4>
-              <p><a href='tel:+8801566026301'>+8801566026301</a></p>
+              <p><a href={`tel:${userData?.data[0].phone}`}>{userData?.data[0].phone}</a></p>
             </div>
             {/* contact-info-item Ended */}
             {/* contact-info-item */}
@@ -36,7 +40,7 @@ const page = () => {
                 <i className="fa fa-envelope" />
               </div>
               <h4>Email</h4>
-              <p><a href='mailto:shaharulsiyam56@gmail.com'>shaharulsiyam56@gmail.com</a></p>
+              <p><a href={`mailto:${userData?.data.email}`}>{userData?.data.email}</a></p>
             </div>
             {/* contact-info-item Ended */}
           </div>

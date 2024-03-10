@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
-const page = () => {
+const page = async() => {
+  const response = await fetch('http://localhost:3000/api/woner', {
+    cache: 'no-store'
+  })
+  const userData = await response.json()
   return (
     <main>
       <section className="about section" id="about">
@@ -16,13 +20,10 @@ const page = () => {
               <div className="row">
                 <div className="about-text padd-15">
                   <h2>
-                    I am shaharul siyam a <span>mern stack developer</span>
+                    I am shaharul siyam a <span>{userData?.data[0].title}</span>
                   </h2>
                   <p>
-                    Hello my name is Shaharul Siyam. I work as a MERN Stack Developer creating web solutions using MongoDB, Express.js, React.js and Node.js. My focus is, on building efficient and user applications that offer an scalable digital experience. I am dedicated to writing code and embracing innovation to deliver results, for web development projects.I am very passionate and dedicated to my work. I have acquired the skills and
-                    knowledge necessary to make your project a success. I enjoy
-                    every step of the design process, from discussion and
-                    collaboration.
+                    {userData?.data[0].about}
                   </p>
                 </div>
               </div>
@@ -31,12 +32,12 @@ const page = () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>https://siyam-portfolio.vercel.app/</span>
+                        Website : <span>https://siyam-portfolio.vercel.app</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Email : <span>shaharulsiyam56@.com</span>
+                        Email : <span>{userData?.data[0].email}</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
@@ -46,12 +47,12 @@ const page = () => {
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Phone : <span>+8801566026301</span>
+                        Phone : <span>{userData?.data[0].phone}</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        City : <span>bogra</span>
+                        City : <span>{userData?.data[0].address}</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
@@ -91,22 +92,22 @@ const page = () => {
                     <div className="skill-item padd-15">
                       <h5>backend with node js</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "60%" }} />
-                        <div className="skill-percent">70%</div>
+                        <div className="progress-in" style={{ width: "75%" }} />
+                        <div className="skill-percent">75%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
                       <h5>backend with php</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "50%" }} />
+                        <div className="progress-in" style={{ width: "55%" }} />
                         <div className="skill-percent">55%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
                       <h5> wordpress website</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "70%" }} />
-                        <div className="skill-percent">70%</div>
+                        <div className="progress-in" style={{ width: "60%" }} />
+                        <div className="skill-percent">60%</div>
                       </div>
                     </div>
                   </div>

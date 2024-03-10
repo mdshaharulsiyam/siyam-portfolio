@@ -1,32 +1,36 @@
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const response = await fetch('http://localhost:3000/api/woner', {
+    cache: 'no-store'
+  })
+  const userData = await response.json()
   return (<>
     <main>
       <section className="home section" id="home">
         <div className="container">
           <div className="intro">
             <Image height={300} width={300}
-              src="https://i.ibb.co/G9sQhtX/Screenshot-2023-11-16-093829.png"
-              alt="Al Siam Profile"
+              src={userData?.data[0].image}
+              alt="shaharul siyam"
               className="shadow-dark"
             />
             <h1>shaharul siyam</h1>
-            <p>mern stack developer</p>
+            <p>{userData?.data[0].title}</p>
             <div className="social-links">
-              <a href="https://twitter.com/" target="_blank">
+              <a href={userData?.data[0].twiter} target="_blank">
                 <i className="fa fa-twitter" />
               </a>
-              <a href="https://facebook.com/" target="_blank">
+              <a href={userData?.data[0].facebook} target="_blank">
                 <i className="fa fa-facebook" />
               </a>
-              <a href="https://github.com/" target="_blank">
+              <a href={userData?.data[0].github} target="_blank">
                 <i className="fa fa-github" />
               </a>
-              <a href="https://instagram.com/" target="_blank">
+              <a href={userData?.data[0].insta} target="_blank">
                 <i className="fa fa-instagram" />
               </a>
-              <a href="https://linkedin.com/in/" target="_blank">
+              <a href={userData?.data[0].linkdin} target="_blank">
                 <i className="fa fa-linkedin" />
               </a>
             </div>
