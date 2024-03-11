@@ -21,7 +21,7 @@ export async function GET(request) {
         if (technology !== 'all') {
             filter.technology = technology
         }
-        const result = await projectModel.find(filter);
+        const result = await projectModel.find(filter).sort({ createdAt: -1 });
         return NextResponse.json({ success: true, data: result });
     } catch (error) {
         return NextResponse.json({ success: false, msg: 'unable to get project' });
