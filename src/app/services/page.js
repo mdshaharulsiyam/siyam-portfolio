@@ -47,9 +47,9 @@ const page = () => {
                         <div className="service-item padd-15">
                             <div className="service-item-inner">
                                 <div className="icon"><i className="fa fa-wordpress" /></div>
-                                <h4>WordPress Development</h4>
+                                <h4>WordPress website</h4>
                                 <p>Harness the power of WordPress for your website. Our experts will build a feature-rich and scalable
-                                    WordPress site that empowers you to manage content effortlessly and stay ahead in the digital
+                                website site that empowers you to manage content effortlessly and stay ahead in the digital
                                     landscape.</p>
                             </div>
                         </div>
