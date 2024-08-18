@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const page = async() => {
+const page = async () => {
   const response = await fetch('https://siyam-portfolio.vercel.app/api/woner', {
     cache: 'no-store'
   })
@@ -64,7 +64,7 @@ const page = async() => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="shaharul_siyam_resume.pdf"
+                        href="https://drive.google.com/file/d/1Jd6nobe8Wo5y_FV5BqHyv0z4LhqytD-A/view?usp=sharing"
                         target="_target"
                         className="btn"
                       >
@@ -123,11 +123,14 @@ const page = async() => {
                   <button>MongoDB</button>
                   <button>Mongooes</button>
                   <button>Javascript</button>
+                  <button>Type Script</button>
+                  <button>Redux</button>
                   <button>PHP</button>
                   <button>MYSQL</button>
                   <button>HTML</button>
                   <button>CSS</button>
                   <button>Tailwind CSS</button>
+                  <button>Antd</button>
                   <button>GitHub</button>
 
                 </div>
@@ -246,18 +249,16 @@ const page = async() => {
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
                         {/* Timeline Item */}
-                        {/* <div className="timeline-item">
+                        <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2023 to Present
+                            <i className="fa fa-calendar" />April 2024 to Present
                           </h6>
-                          <h4 className="timeline-title">web development</h4>
+                          <h4 className="timeline-title">Frontend Developer</h4>
                           <p className="timeline-text">
-                            Since 2023 I started to learn Coding. I have learn
-                            Html, Css, Sass, JavaScript, Bootstrap. Now I am a
-                            Professional Web Designer..
+                            Since April 2024, I have been serving as a <strong>Frontend Developer</strong> At <strong>bdCalling IT</strong>
                           </p>
-                        </div> */}
+                        </div>
                         {/* Timeline Item end */}
                       </div>
                     </div>
