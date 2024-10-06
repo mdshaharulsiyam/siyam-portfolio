@@ -254,9 +254,9 @@ const page = async () => {
                           <h6 className="timeline-date">
                             <i className="fa fa-calendar" />April 2024 to Present
                           </h6>
-                          <h4 className="timeline-title">Frontend Developer</h4>
+                          <h4 className="timeline-title">MERN Stack Developer</h4>
                           <p className="timeline-text">
-                            Since April 2024, I have been serving as a <strong>Frontend Developer</strong> At <strong>bdCalling IT</strong>
+                            Since April 2024, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>bdCalling IT</strong>
                           </p>
                         </div>
                         {/* Timeline Item end */}
