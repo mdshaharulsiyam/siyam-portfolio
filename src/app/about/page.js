@@ -125,6 +125,7 @@ const page = async () => {
                   <button>Javascript</button>
                   <button>Type Script</button>
                   <button>Redux</button>
+                  <button>Soket io</button>
                   <button>PHP</button>
                   <button>MYSQL</button>
                   <button>HTML</button>
@@ -256,7 +257,7 @@ const page = async () => {
                           </h6>
                           <h4 className="timeline-title">MERN Stack Developer</h4>
                           <p className="timeline-text">
-                            Since April 2024, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>bdCalling IT</strong>
+                          December April 2024, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>bdCalling IT</strong>
                           </p>
                         </div>
                         {/* Timeline Item end */}
