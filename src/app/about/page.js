@@ -64,7 +64,7 @@ const page = async () => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="https://drive.google.com/file/d/1Jd6nobe8Wo5y_FV5BqHyv0z4LhqytD-A/view?usp=sharing"
+                        href="https://drive.google.com/file/d/10Jpx3XDHmMmb7pOrHFOYtSzHDYasP0Xb/view?usp=sharing"
                         target="_target"
                         className="btn"
                       >
