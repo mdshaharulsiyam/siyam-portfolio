@@ -252,7 +252,7 @@ const page = async () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" />April 2024 to Present
+                            <i className="fa fa-calendar" />December 2023 to Present
                           </h6>
                           <h4 className="timeline-title">MERN Stack Developer</h4>
                           <p className="timeline-text">
