@@ -115,17 +115,18 @@ const page = async () => {
               </div>
               <div className="row">
                 <div className="skils_set padd-15">
-                  <h3 className='title'>Skils</h3>
+                  <h3 className='title'>Skills</h3>
                   <button>React js</button>
                   <button>Node js</button>
                   <button>Express js</button>
                   <button>Next js</button>
                   <button>MongoDB</button>
-                  <button>Mongooes</button>
+                  <button>Mongoose</button>
                   <button>Javascript</button>
                   <button>Type Script</button>
+                  <button>Prisma</button>
                   <button>Redux</button>
-                  <button>Soket io</button>
+                  <button>Socket io</button>
                   <button>PHP</button>
                   <button>MYSQL</button>
                   <button>HTML</button>
@@ -137,8 +138,8 @@ const page = async () => {
                 </div>
               </div>
               <div className="row">
-                <div className="education padd-15">
-                  <h3 className="title">Education</h3>
+                <div className="experience padd-15">
+                  <h3 className="title">Experience</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
@@ -146,50 +147,17 @@ const page = async () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2022 to Present
+                            <i className="fa fa-calendar" />December 2023 to Present
                           </h6>
-                          <h4 className="timeline-title">
-                            Self Taught (Programming)
-                          </h4>
+                          <h4 className="timeline-title">MERN Stack Developer</h4>
                           <p className="timeline-text">
-                            Since 2022, I embarked on my programming journey, mastering HTML, CSS,JavaScript, and delving into the world of web design. I expanded my skills further by learning web design and development with WordPress and basic PHP CRUD operations, as well as gaining a solid understanding of MySQL basics through European IT. Additionally, I enriched my expertise in MERN stack web development through the comprehensive courses offered by Programming Hero. Today, I proudly identify as a Professional Web Designer, equipped with a diverse skill set to create dynamic and engaging web experiences.
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2018 to 2022
-                          </h6>
-                          <h4 className="timeline-title">
-                            Diploma in Computer Engineering
-                          </h4>
-                          <p className="timeline-text">
-                            In 2022 I completed  Diploma in Computer Engineering from pabna Polytechnic Institute  with GPA- 3.59 out of 4.
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2013 to 2018
-                          </h6>
-                          <h4 className="timeline-title">
-                            Secondary School Certificate
-                          </h4>
-                          <p className="timeline-text">
-                            In 2018 I passed SSC Exam from Science Group with
-                            GPA- 4.17. My school name was pirgachha High School.
+                            From December 2023, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>SparkTech Agency</strong>
                           </p>
                         </div>
                         {/* Timeline Item end */}
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="experience padd-15">
                   <h3 className="title">completed Course</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
@@ -245,7 +213,10 @@ const page = async () => {
                       </div>
                     </div>
                   </div>
-                  <h3 className="title">Experience</h3>
+                </div>
+
+                <div className="education padd-15">
+                  <h3 className="title">Education</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
@@ -253,11 +224,56 @@ const page = async () => {
                         <div className="timeline-item">
                           <div className="circle-dot" />
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" />December 2023 to Present
+                            <i className="fa fa-calendar" /> 2022 to Present
                           </h6>
-                          <h4 className="timeline-title">MERN Stack Developer</h4>
+                          <h4 className="timeline-title">
+                            Self Taught (Programming)
+                          </h4>
                           <p className="timeline-text">
-                          From December 2023, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>bdCalling IT</strong>
+                            Since 2022, I embarked on my programming journey, mastering HTML, CSS,JavaScript, and delving into the world of web design. I expanded my skills further by learning web design and development with WordPress and basic PHP CRUD operations, as well as gaining a solid understanding of MySQL basics through European IT. Additionally, I enriched my expertise in MERN stack web development through the comprehensive courses offered by Programming Hero. Today, I proudly identify as a Professional Web Designer, equipped with a diverse skill set to create dynamic and engaging web experiences.
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                        {/* Timeline Item */}
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> 2025 to Present
+                          </h6>
+                          <h4 className="timeline-title">
+                            B.Sc. in Computer Science & Engineering (CSE)
+                          </h4>
+                          <p className="timeline-text">
+                            Since 2025, I have been studying B.Sc. in Computer Science & Engineering (CSE) at Uttara University.
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                        {/* Timeline Item */}
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> 2018 to 2022
+                          </h6>
+                          <h4 className="timeline-title">
+                            Diploma in Computer Engineering
+                          </h4>
+                          <p className="timeline-text">
+                            In 2022 I completed  Diploma in Computer Engineering from pabna Polytechnic Institute  with GPA- 3.59 out of 4.
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                        {/* Timeline Item */}
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> 2013 to 2018
+                          </h6>
+                          <h4 className="timeline-title">
+                            Secondary School Certificate
+                          </h4>
+                          <p className="timeline-text">
+                            In 2018 I passed SSC Exam from Science Group with
+                            GPA- 4.17. My school name was pirgachha High School.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -265,6 +281,7 @@ const page = async () => {
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

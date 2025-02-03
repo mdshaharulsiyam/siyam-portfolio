@@ -18,18 +18,18 @@ export default async function Home() {
             <h1>shaharul siyam</h1>
             <p>{userData?.data[0].title}</p>
             <div className="social-links">
-              <a href={userData?.data[0].twiter} target="_blank">
+              {/* <a href={userData?.data[0].twiter} target="_blank">
                 <i className="fa fa-twitter" />
-              </a>
+              </a> */}
               <a href={userData?.data[0].facebook} target="_blank">
                 <i className="fa fa-facebook" />
               </a>
               <a href={userData?.data[0].github} target="_blank">
                 <i className="fa fa-github" />
               </a>
-              <a href={userData?.data[0].insta} target="_blank">
+              {/* <a href={userData?.data[0].insta} target="_blank">
                 <i className="fa fa-instagram" />
-              </a>
+              </a> */}
               <a href={userData?.data[0].linkdin} target="_blank">
                 <i className="fa fa-linkedin" />
               </a>

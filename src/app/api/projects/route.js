@@ -21,20 +21,20 @@ export async function GET(request) {
         if (technology !== 'all') {
             filter.technology = technology
         }
-        const result = await projectModel.find(filter).sort({ createdAt: -1 });
+        const result = await projectModel.find(filter).sort({ updatedAt: -1 });
         return NextResponse.json({ success: true, data: result });
     } catch (error) {
         return NextResponse.json({ success: false, msg: 'unable to get project' });
     }
 }
 export async function DELETE(request) {
-try {
-    await ConnectionDB()
-    const id = request.nextUrl.searchParams.get('id');
-    const result = await projectModel.deleteOne({_id :id})
-    return NextResponse.json({ success: true, data: result });
-} catch (error) {
-   // console.log(error)
-    return NextResponse.json({ success: false, msg: 'unable to delete' });
-}
+    try {
+        await ConnectionDB()
+        const id = request.nextUrl.searchParams.get('id');
+        const result = await projectModel.deleteOne({ _id: id })
+        return NextResponse.json({ success: true, data: result });
+    } catch (error) {
+        // console.log(error)
+        return NextResponse.json({ success: false, msg: 'unable to delete' });
+    }
 }
