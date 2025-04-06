@@ -124,6 +124,7 @@ const page = async () => {
                   <button>Mongoose</button>
                   <button>Javascript</button>
                   <button>Type Script</button>
+                  <button>React Native expo</button>
                   <button>Prisma</button>
                   <button>Redux</button>
                   <button>Socket io</button>
@@ -151,7 +152,7 @@ const page = async () => {
                           </h6>
                           <h4 className="timeline-title">MERN Stack Developer</h4>
                           <p className="timeline-text">
-                            From December 2023, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>SparkTech Agency</strong>
+                            From May 2024, I have been serving as a <strong>MERN Stack Developer</strong> At <strong>SparkTech Agency</strong>
                           </p>
                         </div>
                         {/* Timeline Item end */}
