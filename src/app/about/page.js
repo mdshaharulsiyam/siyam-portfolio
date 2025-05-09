@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 
 const page = async () => {
   const response = await fetch('https://siyam-portfolio.vercel.app/api/woner', {
@@ -124,7 +123,7 @@ const page = async () => {
                   <button>Mongoose</button>
                   <button>Javascript</button>
                   <button>Type Script</button>
-                  <button>React Native expo</button>
+                  <button>React Native</button>
                   <button>Prisma</button>
                   <button>Redux</button>
                   <button>Socket io</button>
