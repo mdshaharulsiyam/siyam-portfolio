@@ -26,16 +26,7 @@ const ProjectCard = ({ item, sesion }) => {
                 <Image src={eye} alt="eye" width={20} height={20} />
               </Link>
             </a>
-            {/* <a target='_blank' href={item?.live}>
-              <div className="icon">
-                <i class="fa fa-globe"></i>
-              </div>
-            </a>
-            <a target='_blank' href={item?.github}>
-              <div className="icon">
-                <i class="fa fa-github"></i>
-              </div>
-            </a> */}
+
           </div>
         </div>
       </div>
