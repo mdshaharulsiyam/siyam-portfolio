@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { redirect } from 'next/navigation';
 
 export default async function Home() {
+  return redirect('/about')
   const response = await fetch('https://siyam-portfolio.vercel.app/api/woner', {
     cache: 'no-store'
   })
