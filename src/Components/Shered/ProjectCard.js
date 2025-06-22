@@ -1,4 +1,6 @@
+import eye from '@/asset/eye.png'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ProjectDeleteButton } from '../Portfolio/ProjectDeleteButton/ProjectDeleteButton'
 
 const ProjectCard = ({ item, sesion }) => {
@@ -15,8 +17,16 @@ const ProjectCard = ({ item, sesion }) => {
             {
               sesion?.user && <ProjectDeleteButton id={item?._id} />
             }
-
             <a target='_blank' href={item?.live}>
+              <Link className="icon" style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }} href={"/portfolio/" + item?._id}>
+                <Image src={eye} alt="eye" width={20} height={20} />
+              </Link>
+            </a>
+            {/* <a target='_blank' href={item?.live}>
               <div className="icon">
                 <i class="fa fa-globe"></i>
               </div>
@@ -25,7 +35,7 @@ const ProjectCard = ({ item, sesion }) => {
               <div className="icon">
                 <i class="fa fa-github"></i>
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
