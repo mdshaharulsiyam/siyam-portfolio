@@ -11,11 +11,12 @@ export default function LoginPage() {
       email: email,
       password: password,
       redirect: false,
-      callbackUrl:'/admin/projects'
+      callbackUrl: '/admin/projects'
     })
     //console.log(response)
     if (response?.ok) {
-      router.push(response?.url)
+      // router.push(response?.url)
+      router.push("admin/projects")
     }
   }
   return (<>
