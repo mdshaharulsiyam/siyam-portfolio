@@ -25,9 +25,9 @@ const skills = [
 const experience = [
   {
     date: 'May 2024 to Present',
-    title: 'MERN Stack Developer',
+    title: 'Full Stack Developer',
     company: 'SparkTech Agency',
-    description: `From May 2024, I have been serving as a MERN Stack Developer at SparkTech Agency.`,
+    description: `From May 2024, I have been serving as a Full Stack Developer at SparkTech Agency.`,
   },
 ]
 
