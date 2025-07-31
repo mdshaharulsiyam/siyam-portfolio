@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import logo from '../../../public/3242257.png'
+import logo from '../../../public/3242257.png';
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
@@ -26,7 +26,7 @@ const Sidebar = () => {
       <div className="aside-inner">
         <div className="logo">
           <Link href="/" onClick={handleClose}>
-            <Image src={logo} height={100} width={100} alt="logo"/>
+            <Image src={logo} height={100} width={100} alt="logo" />
           </Link>
         </div>
         <ul className="nav">
@@ -35,14 +35,14 @@ const Sidebar = () => {
               <i className="fa fa-home" /> Home
             </Link>
           </li>
-          <li onClick={handleClose}>
+          {/* <li onClick={handleClose}>
             <Link
               href="/about"
               className={`${pathUrl == "/about" ? "active" : ""}`}
             >
               <i className="fa fa-user" /> About
             </Link>
-          </li>
+          </li> */}
           <li onClick={handleClose}>
             <Link
               href="/services"
@@ -79,7 +79,7 @@ const Sidebar = () => {
         <div className="copyright">
           Created with ❤️ By{" "}
           <a href="http://alsiam.com" target="_blank" rel="noopener noreferrer">
-           shaharul siyam
+            shaharul siyam
           </a>
         </div>
       </div>
