@@ -173,7 +173,7 @@ const Page = async () => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="https://drive.google.com/file/d/1ANOGrlCnBMx_aD_swltnuK29d7W3r1aq/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1cZIiVKCHacwnRxNyKsumQn6TlWTMc647/view?usp=sharing"
                         target="_blank"
                         className="btn"
                       >
