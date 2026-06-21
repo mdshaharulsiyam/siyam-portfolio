@@ -41,6 +41,7 @@
 //   </>)
 // }
 import Link from 'next/link';
+import RedirectModal from './RedirectModal';
 
 const skills = [
   'React js',
@@ -127,6 +128,7 @@ const Page = async () => {
 
   return (
     <main>
+      <RedirectModal />
       <section className="about section" id="about">
         <div className="container">
           {/* Title */}
